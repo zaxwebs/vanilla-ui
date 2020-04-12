@@ -63,7 +63,14 @@ ul {
 .element {
   width: 100%;
   padding-top: 65%;
-  background: #7d30b1;
+  background-color: #adadad;
+  background-image: linear-gradient(
+      to right,
+      rgba(106, 19, 205, 0.616),
+      rgba(51, 11, 97, 0.829)
+    ),
+    url('./images/cover.jpg');
+  background-size: cover;
 }
 
 .content {
