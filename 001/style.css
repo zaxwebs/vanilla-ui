@@ -23,6 +23,11 @@ ul {
   padding-left: 0;
 }
 
+footer {
+  padding: 10px;
+  background-color: #111;
+}
+
 .bg-dark {
   color: #fff;
 }
@@ -32,7 +37,7 @@ ul {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 35px);
   display: flex;
   flex-direction: column;
 }
