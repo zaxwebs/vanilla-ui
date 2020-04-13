@@ -72,6 +72,7 @@ p {
   max-width: 300px;
   border: 1px solid #333;
   background: #ffffffe8;
+  margin-bottom: 16px;
 }
 
 .card .header {
