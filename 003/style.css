@@ -61,6 +61,7 @@ section {
 .card {
   background: #fff;
   margin-bottom: 10px;
+  border: 1px solid #333;
 }
 
 .card .header,
