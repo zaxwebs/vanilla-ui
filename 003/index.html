@@ -13,7 +13,7 @@
         <span class="brand">UI/003</span>
       </header>
       <main>
-        <section>
+        <section class="first">
           <div class="card card-a">
             <div class="header bg-dark">
               Card A
@@ -45,6 +45,22 @@
             considered better/faster but it isn't very extensible. From an
             atomic point of view, each molecule is better off being
             containerized from the start as it allows for being extended easily.
+          </p>
+        </section>
+        <section>
+          <div class="card card-c">
+            <div class="header bg-dark">Card C</div>
+            <div>
+              Lorem Ipsum Dolor Set.
+              <div>Lorem Ipsum Dolor Set.</div>
+            </div>
+            <div class="footer">The Card Footer</div>
+          </div>
+          <p>
+            Card C is containerized but follows a different approach of setting
+            padding on direct children. This simplifies setting the padding but
+            header and footer aren't atomic as in don't maintain their structure
+            outside the card. Applies only when such a need exists.
           </p>
         </section>
       </main>

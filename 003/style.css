@@ -38,6 +38,10 @@ footer {
   background-color: #a2b1c6;
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
 .bg-dark {
   color: #fff;
 }
@@ -61,8 +65,12 @@ footer {
 
 .card .header,
 .card .footer {
-  padding: 10px;
   background: #3679d8;
+}
+
+section.first .card .header,
+section.first .card .footer {
+  padding: 10px;
 }
 
 .card .header {
@@ -98,4 +106,8 @@ footer {
 .card-b .footer {
   margin: -10px;
   margin-top: 0;
+}
+
+.card-c > * {
+  padding: 10px;
 }
