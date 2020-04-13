@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/003</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="upper-wrapper">
+      <header class="bg-dark">
+        <span class="brand">UI/003</span>
+      </header>
+      <main>
+        <section>
+          <div class="card card-a">
+            <div class="header bg-dark">
+              Card A
+            </div>
+            <div class="body">
+              <div class="a">Lorem Ipsum Dolor Set.</div>
+              <div class="b">Lorem Ipsum Dolor Set.</div>
+            </div>
+            <div class="footer bg-dark">
+              The Card Footer
+            </div>
+          </div>
+          <div class="card card-b">
+            <div class="header bg-dark">
+              Card B
+            </div>
+            <div class="a">Lorem Ipsum Dolor Set.</div>
+            <div class="b">
+              Lorem Ipsum Dolor Set.
+            </div>
+            <div class="footer bg-dark">
+              The Card Footer
+            </div>
+          </div>
+          <p>
+            While both the cards above look same, they are different in their
+            implementation. Card A has "containerized" children while Card B
+            doesn't. Without a header and footer, Card B approach can be
+            considered better/faster but it isn't very extensible. From an
+            atomic point of view, each molecule is better off being
+            containerized from the start as it allows for being extended easily.
+          </p>
+        </section>
+      </main>
+    </div>
+    <footer class="bg-dark">
+      &copy ZaxWebs 2020. All rights reserved.
+    </footer>
+  </body>
+</html>

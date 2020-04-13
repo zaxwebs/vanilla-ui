@@ -84,6 +84,10 @@ a.project:hover {
   box-shadow: -3px -3px 3px #fffffff1, 3px 3px 3px #a2b1c6f1;
 }
 
+a.project:hover h2 {
+  color: #3679d8;
+}
+
 a.project:active {
   box-shadow: -2px -2px 3px #fffffff1, 2px 2px 3px #a2b1c6f1;
 }
