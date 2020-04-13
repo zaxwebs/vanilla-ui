@@ -64,6 +64,7 @@ footer {
 
 a.project {
   display: block;
+  height: calc(100% - 20px); /* 20 = 10 on top & bottom */
   text-decoration: none;
   padding: 10px;
   border-radius: 2px;
