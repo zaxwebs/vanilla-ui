@@ -26,9 +26,11 @@
         <section class="inset-8">
           <p>
             This project aims to implement spacing in the from of insets as
-            paddings and stacking as margins. Space between parent and child is
-            created using inset on parent. Space (mostly vertical) between
-            (generally after) children is defined with stacking.
+            paddings and stacking & inlines as margins. Space between parent and
+            child is created using inset on parent. Vertical space between
+            (generally after) children is defined with stacking while space
+            while horizontal space between (generally after) children is created
+            using inlines.
           </p>
           <p>
             Spacing can be atomic with respective utility classes, which can
@@ -37,22 +39,34 @@
             atomic spacing utilities only when needed such as when one child
             needs to be full width and the rest within inset.
           </p>
-          <div class="card">
-            <div class="header inset-8">
-              Placeholder for image or other content.
+          <section class="cards">
+            <div class="card inline-16">
+              <div class="header inset-8">
+                Placeholder for image or other content.
+              </div>
+              <div class="inset-8">
+                <h2>El Card 004A</h2>
+                <p>This card utilizes atomic inset classes.</p>
+              </div>
+              <div class="footer">
+                <div class="col inset-8">Stat X</div>
+                <div class="col inset-8">Stat Y</div>
+              </div>
             </div>
-            <div class="inset-8">
-              <h2>El Card 004</h2>
-              <p>This card utilizes atomic inset classes.</p>
+            <div class="card">
+              <div class="header inset-8">
+                Placeholder for image or other content.
+              </div>
+              <div class="inset-8">
+                <h2>El Card 004B</h2>
+                <p>This card utilizes atomic inset classes.</p>
+              </div>
+              <div class="footer">
+                <div class="col inset-8">Stat X</div>
+                <div class="col inset-8">Stat Y</div>
+              </div>
             </div>
-            <div class="footer">
-              <div class="col inset-8">Stat X</div>
-              <div class="col inset-8">Stat Y</div>
-            </div>
-          </div>
-          <h4>Horizontal spacing between children?</h4>
-          You can set margins via parent (generally without inset as margins can
-          replace the spacing).
+          </section>
         </section>
       </main>
     </div>
