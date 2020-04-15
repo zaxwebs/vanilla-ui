@@ -52,6 +52,11 @@ p {
   background: #17217e;
 }
 
+.scheme-green {
+  color: #fff;
+  background: #14d189;
+}
+
 /* _SPACING */
 
 .inset-1 {
@@ -101,8 +106,3 @@ p {
 }
 
 /* /_SPACING */
-
-.demo {
-  color: #fff;
-  background: #14d189;
-}
