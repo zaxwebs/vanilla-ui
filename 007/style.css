@@ -91,7 +91,7 @@ p {
   margin-bottom: 18px;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 400px) {
   .inset-auto-1 {
     padding: 10px;
   }
