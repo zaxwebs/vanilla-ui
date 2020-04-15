@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/007</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <header class="nav">
+				<div class="inset-1">
+					<span class="brand">UI/007 Responsive Spacing</span>
+				</div>
+      </header>
+      <main class="body">
+				<div class="inset-1">
+					<div class="stack-auto-3 inset-1 scheme-blue">
+						<h2>Static Mobile First Insets with .inset-{size}</h2>
+						<div class="demo stack-1">
+							<div class="inset-1">
+								.inset-1
+							</div>
+						</div>
+						<p>.inset-1 has a fixed padding of 5px. The default scale follows multiples of 5, thus, inset-10 has a static padding of 10px and so on.</p>
+					</div>
+					<div class="stack-auto-3 inset-1 scheme-blue">
+						<h2>Responsive Insets with .inset-auto-{size}</h2>
+						<div class="demo stack-1">
+							<div class="inset-auto-1">
+								.inset-auto-1
+							</div>
+						</div>
+						<p>.inset-auto-{size} where padding is {size} * 5px <b>below</b> set breakpoint(s), for this demo, I've used only one breakpoint of 350px width and padding is {size} * 10px <b>above</b> set breakpoint(s).</p>
+					</div>
+					<div class="stack-0">
+						<h2>Notes</h2>
+						<ul>
+							<li><p>This documentation specifies insets but the same mechanic follows for stacks and inlines.</p></li>
+							<li><p>.stack-auto-{3} can be seen in action on the above blue divs.</p></li>
+							<li>
+								<p>The choice of a scale that's multiples of 5 & 10 was arbitrary. Non-linear scales can be adopted as well. {size} can be none, a, b, c... for non-linear scales.</p>
+							</li>
+						</ul>
+						
+						
+						
+					</div>
+				</div>
+			</main>
+    </div>
+    <footer class="footer">
+			<div class="inset-1">
+				ZaxWebs 2020. All rights reserved.
+			</div>
+		</footer>
+  </body>
+</html>

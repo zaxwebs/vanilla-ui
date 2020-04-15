@@ -1,0 +1,108 @@
+/* BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace;
+  font-size: 16px;
+  color: #333;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+/* LAYOUT */
+
+.nav,
+.footer {
+  color: #fff;
+  background-color: #333;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.body {
+  min-height: calc(100vh - 62px);
+}
+
+/* UTILS */
+
+.scheme-blue {
+  color: white;
+  background: #17217e;
+}
+
+/* _SPACING */
+
+.inset-1 {
+  padding: 6px;
+}
+
+.inset-2 {
+  padding: 12px;
+}
+
+.inset-auto-1 {
+  padding: 6px;
+}
+
+.inset-auto-2 {
+  padding: 12px;
+}
+
+.stack-0 {
+  margin-bottom: 0;
+}
+
+.stack-1 {
+  margin-bottom: 5px;
+}
+
+.stack-3 {
+  margin-bottom: 15px;
+}
+
+.stack-auto-3 {
+  margin-bottom: 18px;
+}
+
+@media (min-width: 350px) {
+  .inset-auto-1 {
+    padding: 10px;
+  }
+
+  .inset-auto-2 {
+    padding: 20px;
+  }
+
+  .stack-auto-3 {
+    margin-bottom: 30px;
+  }
+}
+
+/* /_SPACING */
+
+.demo {
+  color: #fff;
+  background: #14d189;
+}
