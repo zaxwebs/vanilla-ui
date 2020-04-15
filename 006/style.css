@@ -57,7 +57,7 @@ main.body {
 }
 
 .shadow {
-  box-shadow: 3px 3px 20px 5px #d6dae4;
+  box-shadow: -3px -3px 20px 5px #eef0f5, 3px 3px 20px 5px #d6dae4;
 }
 
 .card {
