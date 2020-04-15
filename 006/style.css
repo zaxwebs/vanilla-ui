@@ -1,0 +1,126 @@
+/* BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace;
+  font-size: 16px;
+  color: #333;
+}
+
+body {
+  margin: 0;
+}
+
+/* UTILS */
+
+.inset-24 {
+  padding: 24px;
+}
+
+/* COMPONENTS */
+.btn {
+  background: #0e36b8;
+  color: #fff;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background-color: #3058dd;
+}
+
+/* CUSTOM */
+
+.footer,
+.nav {
+  padding: 8px;
+  color: #fff;
+  background-color: #333;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+main.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  background: #f0f1f5;
+  padding: 8px;
+}
+
+.shadow {
+  box-shadow: 3px 3px 20px 5px #d6dae4;
+}
+
+.card {
+  flex: 0 1 280px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  background: #0e36b8;
+  background-image: linear-gradient(#0e36b800, #0e36b800 #0000004d);
+  color: #fff;
+  padding: 24px;
+  padding-bottom: 12px;
+}
+
+.card-socials {
+  display: flex;
+}
+
+.card-socials a {
+  font-size: 14px;
+  color: #fff;
+  background: #3058dd;
+  border: 1px solid #3058dd;
+  padding: 4px;
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+.card-socials a:hover {
+  border: 1px solid #fff;
+}
+
+.card-id {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-id .profile-photo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #3058dd;
+  margin-right: 12px;
+  margin-bottom: -24px;
+}
+
+.card-id .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-body .bio {
+  margin-bottom: 12px;
+}
