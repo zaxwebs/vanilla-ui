@@ -1,0 +1,88 @@
+:root {
+  font-size: 16px;
+  font-family: monospace;
+
+  --color-blue: #546ff0;
+  --color-sky: #54cef2;
+  --color-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+nav {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  background: linear-gradient(to right, var(--color-blue), var(--color-sky));
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  transition: all 0.3s;
+}
+
+nav a,
+nav .toggler {
+  padding: 8px;
+  cursor: pointer;
+}
+
+nav a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+nav .text,
+nav .extra {
+  display: none;
+}
+
+nav .logo,
+nav .toggler {
+  flex: 1;
+}
+
+nav .nav-links {
+  flex: 2;
+  display: flex;
+}
+
+.nav-links > * {
+  flex: 1;
+}
+
+nav > * {
+  text-align: center;
+}
+
+/* nav open */
+
+nav.open {
+  flex-direction: column;
+  padding-bottom: 44px;
+}
+
+nav.open .text,
+nav.open .extra {
+  display: block;
+}
+
+nav.open > * {
+  flex: 1;
+}
+
+nav.open .nav-links {
+  flex-wrap: wrap;
+}
+
+nav.open .nav-links > * {
+  flex: 0;
+  flex-basis: calc(100% / 2);
+}
