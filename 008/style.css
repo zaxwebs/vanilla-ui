@@ -86,3 +86,40 @@ nav.open .nav-links > * {
   flex: 0;
   flex-basis: calc(100% / 2);
 }
+
+@media (min-width: 1400px) {
+  nav {
+    left: 0;
+    height: 100vh;
+    width: auto;
+    flex-direction: column;
+    background: linear-gradient(to bottom, var(--color-blue), var(--color-sky));
+    justify-content: flex-start;
+  }
+
+  nav .logo {
+    flex: 0 0 50px;
+  }
+
+  nav .toggler {
+    flex: 0 0 50px;
+    order: 2;
+  }
+
+  nav .nav-links {
+    margin-top: 20vh;
+    order: 3;
+    flex: 0 0 350px;
+    flex-direction: column;
+  }
+
+  nav.open .nav-links {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  nav.open .nav-links > * {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
