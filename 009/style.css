@@ -1,0 +1,150 @@
+:root {
+  font-size: 16px;
+  font-family: monospace;
+  --color-blue: #2f4fec;
+  --color-sky: #21c2f3;
+  --color-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#main-nav {
+  color: var(--color-white);
+  background: linear-gradient(to right, var(--color-blue), var(--color-sky));
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#main-nav a {
+  flex: 1;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+#main-nav #toggler {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+#main-nav a,
+#main-nav #toggler {
+  text-align: center;
+  display: block;
+  padding: 12px;
+}
+
+#main-nav a:hover,
+#main-nav #toggler:hover {
+  background: var(--color-blue);
+}
+
+#main-nav #logo,
+#main-nav #toggler {
+  flex: 0 0 calc(100% / 4);
+}
+
+#main-nav #nav-links {
+  display: flex;
+  flex: 0 0 calc(100% / 2);
+  justify-content: space-between;
+}
+
+#main-nav .extra,
+#main-nav .text {
+  display: none;
+}
+
+#main-nav.open {
+  flex-direction: column;
+  padding-bottom: 43px;
+}
+
+#main-nav.open .extra,
+#main-nav.open .text {
+  display: block;
+}
+
+#main-nav.open #nav-links {
+  flex-wrap: wrap;
+}
+
+#main-nav.open #nav-links > a {
+  flex: 0 0 calc(100% / 2);
+}
+
+#content {
+  padding: 8px;
+  margin-bottom: 43px;
+}
+
+@media (min-width: 700px) {
+  #main-nav {
+    background: linear-gradient(to bottom, var(--color-blue), var(--color-sky));
+    left: 0;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #main-nav #toggler {
+    background: linear-gradient(to right, var(--color-dark), var(--color-blue));
+  }
+
+  #main-nav a,
+  #main-nav #toggler {
+    padding: 32px;
+  }
+
+  #main-nav #logo,
+  #main-nav #toggler {
+    flex: initial;
+  }
+
+  #main-nav #nav-links {
+    order: 1;
+    flex-direction: column;
+    flex: initial;
+    margin-top: 10vh;
+  }
+
+  #main-nav.open {
+    width: 215px;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  #main-nav.open #nav-links > a {
+    flex: initial;
+  }
+
+  #main-nav.open #toggler,
+  #main-nav.open #nav-links > a {
+    display: flex;
+  }
+
+  .text {
+    margin-left: 1rem;
+  }
+
+  #content {
+    margin-left: 73px;
+  }
+
+  #content.open {
+    margin-left: 215px;
+    /*
+    margin-left: -215px;
+    */
+  }
+}
