@@ -1,52 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Questrial&display=swap');
-
 * {
   box-sizing: border-box;
 }
-
 body {
-  font-size: 16px;
   margin: 0;
   color: #1b1b1b;
   font-size: 18px;
   font-family: 'Questrial', sans-serif;
   min-width: 700px;
 }
-
 nav,
 footer {
   padding: 8px;
   background: #1b1b1b;
   color: #fff;
 }
-
 main {
   min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2bc0e4; /* fallback for old browsers */
+  background: #2bc0e4;
+  /* fallback for old browsers */
   background: linear-gradient(225deg, #eaecc6, #2bc0e4);
 }
-
 h1 {
   margin-top: 10px;
   font-size: 2rem;
   font-family: 'Krona One', sans-serif;
 }
-
 .card {
   background: #fff;
   max-width: 700px;
   display: flex;
   border-radius: 10px;
 }
-
 .graphic {
   position: relative;
   flex: 40% 0 0;
 }
-
 .wrapper {
   position: absolute;
   bottom: 0;
@@ -54,12 +46,10 @@ h1 {
   padding-top: 200%;
   overflow: hidden;
 }
-
 .wrapper img {
   position: absolute;
   bottom: -150px;
   width: 100%;
-
   transform-origin: 50% 100%;
   animation-name: wave;
   animation-duration: 1.5s;
@@ -67,13 +57,11 @@ h1 {
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
-
 .content {
   padding: 20px;
   padding-right: 30px;
   flex: 60% 0 0;
 }
-
 @keyframes wave {
   0% {
     transform: rotate(-8deg);
