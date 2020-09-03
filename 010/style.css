@@ -1,9 +1,4 @@
-:root {
-  --p-4: 4px;
-  --p-8: 8px;
-  --c-dark: #333;
-  --c-light: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Questrial&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,15 +7,87 @@
 body {
   font-size: 16px;
   margin: 0;
+  color: #1b1b1b;
+  font-size: 18px;
+  font-family: 'Questrial', sans-serif;
+  min-width: 700px;
 }
 
 nav,
 footer {
-  padding: var(--p-8);
-  background: var(--c-dark);
-  color: var(--c-light);
+  padding: 8px;
+  background: #1b1b1b;
+  color: #fff;
 }
 
 main {
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2bc0e4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #eaecc6,
+    #2bc0e4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #eaecc6,
+    #2bc0e4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-family: 'Krona One', sans-serif;
+}
+
+.card {
+  background: #fff;
+  max-width: 750px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.graphic {
+  position: relative;
+  flex: 40% 0 0;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 200%;
+  overflow: hidden;
+}
+
+.wrapper img {
+  position: absolute;
+  bottom: -150px;
+  width: 100%;
+
+  transform-origin: 50% 100%;
+  animation-name: wave;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.content {
+  padding: 20px;
+  padding-right: 30px;
+  flex: 60% 0 0;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
