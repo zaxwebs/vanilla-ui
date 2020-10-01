@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+section {
+  padding: 10px;
+  height: calc(100vh - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(odd) {
+  background: #2b54db;
+  color: #fff;
+}
