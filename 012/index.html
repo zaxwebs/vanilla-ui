@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/scroll.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>012</title>
   </head>
@@ -13,12 +14,29 @@
     <div class="side right-side">
       <div class="info">X012 - DXLR 00110000 00110001 00110010</div>
     </div>
-    <main>
-      <section>
+    <main data-scroll-container>
+      <section data-scroll data-scroll-section>
         <div class="cover">
-          <div class="visual"></div>
-          <div class="copy">
-            <h1>Beyond Layouts</h1>
+          <div
+            data-scroll
+            data-scroll-position="top"
+            data-scroll-speed="3"
+            class="visual"
+          ></div>
+          <div
+            data-scroll
+            data-scroll-position="top"
+            data-scroll-speed="1"
+            class="copy"
+          >
+            <h1
+              data-scroll
+              data-scroll-position="top"
+              data-scroll-speed="-3"
+              data-scroll-direction="horizontal"
+            >
+              Beyond Layouts
+            </h1>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
             turpis vel enim tincidunt semper. Nullam euismod leo nec laoreet
             auctor. Sed maximus quam quis leo hendrerit sodales. Morbi sapien
@@ -34,5 +52,7 @@
         <h1 class="quote">You can't run from your thoughts.</h1>
       </section>
     </main>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
